@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python - Documentation</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            outline: none;
+            color: white;
+        }
+
+        body {
+            background-color: #245076;
+        }
+
+        .container {
+            width: 970px;
+            margin: 20px auto;
+        }
+
+        .header img {
+            width: 400px;
+        }
+
+        .header>* {
+            display: inline-block;
+            vertical-align: top;
+        }
+
+        .search-bar {
+            text-align: right;
+        }
+
+        .text-yellow {
+            color: #edc936;
+        }
+
+        .search-container {
+            margin-top: 10px;
+            padding: 15px 35px;
+            border-radius: 10px;
+            background-color: #444444;
+            box-shadow: 2px 2px 5px black;
+        }
+
+        .text-size {
+            padding-right: 30px;
+        }
+
+        .search-container .search {
+            padding: 15px 30px 15px 10px;
+        }
+
+        input[type="text"]::placeholder {
+            text-align: center;
+        }
+
+        .go {
+            background: #245076;
+            color: white;
+            padding: 10px;
+            border-radius: 10px;
+        }
+
+        .logo-container {
+            width: 634px;
+        }
+
+        .nav-bar {
+            padding: 15px 20px;
+            background-color: #437dad;
+            width: 860px;
+            margin: 20px auto;
+            box-shadow: 2px 2px 4px black;
+            border-radius: 5px;
+            text-align: center;
+        }
+
+        .nav-bar a {
+            font-size: 22px;
+            text-decoration: none;
+            margin: 0px 24px;
+        }
+
+        .sidebar {
+            padding-top: 15px;
+            width: 260px;
+            text-align: center;
+        }
+
+        .sidebar * {
+            list-style-type: none;
+            font-size: 20px;
+        }
+
+        .sidebar a {
+            padding-left: 20px;
+            display: inline-block;
+            margin: 5px;
+        }
+
+        .contents {
+            width: 860px;
+            margin: auto;
+        }
+
+        .contents>* {
+            display: inline-block;
+            vertical-align: top;
+        }
+
+        .content {
+            width: 595px;
+            text-align: center;
+            padding-top: 10px;
+        }
+
+        .content h2 {
+            margin: 10px;
+        }
+        .mid-content{
+            padding: 10px;
+            background: white;
+        }
+        .mid-content *{
+            color: black;
+        }
+        .mid-content > *{
+            /* width: 400px;
+            display: inline-block;
+            vertical-align: top;
+            margin: auto; */
+        }
+        .center-container{
+            width: 860px;
+            margin: auto;
+        }
+        .center-container > *{
+            width: 390px;
+            display: inline-block;
+            vertical-align: top;
+            margin: 15px;
+            border-top: 3px solid #73a7d5;
+            text-align: center;
+        }
+        .mid-containers{
+            padding-left: 46px;
+            width: 304px;
+        }
+        .mid-containers a{
+            color: #83b1da;
+            padding: 2px 0px 0px 0px;
+            display: inline-block;
+        }
+        .footer{
+            padding: 40px 20px 20px 20px;
+            background: linear-gradient(180deg, rgba(38,84,125,1) 10%, rgba(50,113,167,1) 90%);
+            text-align: center;
+            color: #81b3e0;
+        }
+        .footer-heading > *{
+            display: inline-block;
+            margin: 20px;
+            color: #81b3e0;
+        }
+        .copyright{
+            color: #81b3e0;
+            text-align: center;
+            font-size: 12px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="logo-container">
+                <img src="python.png" alt="">
+            </div>
+
+            <div class="search-bar">
+                <div class="text-size">
+                    Text Size: <a href="#" class="text-yellow">Normal</a> | <a href="#" class="text-yellow">Large</a>
+                </div>
+                <div class="search-container">
+                    <form>
+                        <input type="text" placeholder="Search" class="search">
+                        <input type="submit" value="GO" class="go">
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="nav-bar">
+            <a href="#">About</a>
+            <a href="#">Downloads</a>
+            <a href="#">Documentation</a>
+            <a href="#">Community</a>
+            <a href="#">News</a>
+            <a href="#">Events</a>
+        </div>
+        <div class="contents">
+            <div class="sidebar">
+                <ul>
+                    <li><span class="text-yellow">>></span><a href="#">Docs</a></li>
+                    <li><span class="text-yellow">>></span><a href="#">Audio/Visual/Talks</a></li>
+                    <li><span class="text-yellow">>></span><a href="#">Beginner's Guide</a></li>
+                    <li><span class="text-yellow">>></span><a href="#">Developer's Guide</a></li>
+                    <li><span class="text-yellow">>></span><a href="#">PEP Index</a></li>
+                    <li><span class="text-yellow">>></span><a href="#">Python Books</a></li>
+                    <li><span class="text-yellow">>></span><a href="#">FAQ</a></li>
+                </ul>
+            </div>
+            <div class="content">
+                <p>First appearing in 1991, Python is a general-purpose, high level, interpreted programming language
+                    whose design focus emphasizes code readability. Whether for processing/analyzing data to pwering
+                    many well-known applications, Python is not only a great language for new programmers but also
+                    powerful enough for seasoned devleopers building whatever they can think of.</p>
+                <h2 class="text-yellow">Beautiful is better than ugly;</h2>
+                <h2 class="text-yellow">Explicit is better than implicit;</h2>
+                <h2 class="text-yellow">Simple is better than complex;</h2>
+                <h2 class="text-yellow">Complex is better than complicated;</h2>
+                <h2 class="text-yellow">Readbility counts;</h2>
+                <h3>The Zen of Python</h3>
+            </div>
+        </div>
+    </div>
+    
+    <div class="mid-content">
+        <div class="center-container">
+            <div class="getting-started">
+                <div class="mid-containers">
+                    <h2>Getting Started</h2>
+                    <p>Python can be easy to pick up Whether you're a first time programmer or you're experienced with other languages. The following pages are a useful first step to get on your way writing programs with Python!</p>
+                    <ul>
+                        <li><a href="#">Beginner's Guide, Programmers</a></li>
+                        <li><a href="#">Beginner's Guide, Non-Programmers</a></li>
+                        <li><a href="#">Code Sample and snippets for Beginners</a></li>
+                    </ul>
+                </div>
+               
+            </div>
+            <div class="applications">
+                <div class="mid-containers">
+                    <h2>Applications</h2>
+                    <p>The <span class="text-blue">Python Packange Index (PyPI)</span> hosts thousands of third-party modules for Python. Both Python's standard library and the community-contributed modules allow for endless possibilities</p>
+                    <ul>
+                        <li><a href="#">Web and Internet Develpment</a></li>
+                        <li><a href="#">Database Access</a></li>
+                        <li><a href="#">Desktop GUIs</a></li>
+                        <li><a href="#">Network Programming</a></li>
+                        <li><a href="#">Sofware and Game Development</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+     
+    </div>
+    <div class="footer">
+        <div class="footer-heading">
+            <h2>Help and General Contact</h2>
+            <h2>Diversity Initiatives</h2>
+            <h2>Submit Website Bugs</h2>
+        </div>
+        <div class="copyright">
+            Copyright @2001-2016
+        </div>
+        
+    </div>
+</body>
+
+</html>
